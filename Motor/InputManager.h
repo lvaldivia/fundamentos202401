@@ -15,6 +15,7 @@ public:
 	}
 	void setMouseCoords(float x, float y);
 	void pressKey(unsigned int keyCode);
+	bool isKeyDown(unsigned int keyCode);
 	void releaseKey(unsigned int keyCode);
 	bool isKeyPressed(unsigned int keyCode);
 	~InputManager();

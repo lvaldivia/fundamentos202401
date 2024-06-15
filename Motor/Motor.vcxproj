@@ -137,6 +137,7 @@
     <ClCompile Include="Error.cpp" />
     <ClCompile Include="GLS_Program.cpp" />
     <ClCompile Include="Human.cpp" />
+    <ClCompile Include="IGameScreen.cpp" />
     <ClCompile Include="ImageLoader.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="IOManager.cpp" />
@@ -146,6 +147,7 @@
     <ClCompile Include="picoPNG.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="ScreenList.cpp" />
     <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="SpriteBatch.cpp" />
     <ClCompile Include="TextureCache.cpp" />
@@ -159,6 +161,7 @@
     <ClInclude Include="GLS_Program.h" />
     <ClInclude Include="GLTexture.h" />
     <ClInclude Include="Human.h" />
+    <ClInclude Include="IGameScreen.h" />
     <ClInclude Include="ImageLoader.h" />
     <ClInclude Include="InputManager.h" />
     <ClInclude Include="IOManager.h" />
@@ -168,6 +171,7 @@
     <ClInclude Include="Player.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="ScreenList.h" />
     <ClInclude Include="Sprite.h" />
     <ClInclude Include="SpriteBatch.h" />
     <ClInclude Include="TextureCache.h" />

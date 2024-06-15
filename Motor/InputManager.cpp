@@ -15,6 +15,15 @@ void InputManager::pressKey(unsigned int keyCode)
     keys[keyCode] = true;
 }
 
+bool InputManager::isKeyDown(unsigned int keyCode)
+{
+    auto it = keys.find(keyCode);
+    if (it != keys.end()) {
+        return it->second;
+    }
+    return false;
+}
+
 void InputManager::releaseKey(unsigned int keyCode)
 {
     keys[keyCode] = false;
@@ -22,10 +31,7 @@ void InputManager::releaseKey(unsigned int keyCode)
 
 bool InputManager::isKeyPressed(unsigned int keyCode)
 {
-    auto it = keys.find(keyCode);
-    if (it != keys.end()) {
-        return it->second;
-    }
+    
     return false;
 }
 

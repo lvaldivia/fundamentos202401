@@ -37,19 +37,28 @@ void Level::parseLevel()
 			{
 			case 'R':
 			case 'B':
-				
+				spritebatch.draw(destRect, uvRect,
+					ResourceManager::getTexture("Images/red_bricks.png").id,
+					0.0f,color);
 				break;
 			case 'G':
-				
+				spritebatch.draw(destRect, uvRect,
+					ResourceManager::getTexture("Images/glass.png").id,
+					0.0f, color);
 				break;
 			case 'L':
-				
+				spritebatch.draw(destRect, uvRect,
+					ResourceManager::getTexture("Images/light_bricks.png").id,
+					0.0f, color);
 				break;
 			case '@':
-				
+				levelData[y][x] = '.';
+				playerPosition.x = x * TILE_WIDTH;
+				playerPosition.y = y * TILE_WIDTH;
 				break;
 			case 'Z':
-				
+				levelData[y][x] = '.';
+				zombies.push_back(glm::vec2(x * TILE_WIDTH, y * TILE_WIDTH));
 				break;
 			case '.':
 				break;

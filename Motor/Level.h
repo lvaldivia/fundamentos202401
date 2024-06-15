@@ -27,7 +27,7 @@ public:
 	vector<glm::vec2> getZombiesPosition() {
 		return zombies;
 	}
-	const vector<string>& getLevelData() {
+	vector<string>& getLevelData() {
 		return levelData;
 	}
 	int getWidth()const {
